@@ -1,0 +1,97 @@
+{
+  "account": {
+    "phone": "YOUR_PHONE_NUMBER",
+    "storage_state": "state/goofish_state.json",
+    "login_screenshot": "state/login.png",
+    "browser_channel": "",
+    "headless": false,
+    "slow_mo_ms": 80
+  },
+  "runtime": {
+    "interval_seconds": 300,
+    "jitter_seconds": 90,
+    "max_pages": 1,
+    "max_results_per_product": 40,
+    "page_timeout_ms": 45000,
+    "human_delay_min_seconds": 2.0,
+    "human_delay_max_seconds": 5.0,
+    "stop_on_risk_control": true
+  },
+  "filters": {
+    "global_exclude_terms": [
+      "求购",
+      "回收",
+      "租赁",
+      "出租",
+      "租金",
+      "定金",
+      "订金",
+      "不要拍",
+      "拍前联系",
+      "补差价",
+      "链接",
+      "引流",
+      "维修",
+      "故障",
+      "坏",
+      "尸体",
+      "缺件",
+      "不全",
+      "配件",
+      "保护套",
+      "贴膜",
+      "盒子",
+      "包装盒"
+    ],
+    "suspicious_terms": [
+      "价格随便填",
+      "价格乱填",
+      "标价不是售价",
+      "低价引流",
+      "到手刀",
+      "仅展示",
+      "交流",
+      "换",
+      "置换",
+      "预定",
+      "先款",
+      "私聊报价"
+    ],
+    "default_min_score": 60,
+    "very_low_price_ratio": 0.35
+  },
+  "notifications": {
+    "console": true,
+    "mac_notification": true,
+    "ntfy_topic_url": "",
+    "webhook_url": "",
+    "bark_url": "",
+    "cc_connect": {
+      "enabled": false,
+      "command": "/opt/homebrew/bin/cc-connect",
+      "project": "codex-wechat",
+      "session": "",
+      "timeout_seconds": 30
+    }
+  },
+  "products": [
+    {
+      "name": "Example Camera Gear",
+      "keyword": "Example Camera Gear",
+      "target_price": 1000,
+      "min_price": 300,
+      "market_price": 1500,
+      "required_any_terms": [
+        "Example",
+        "Camera",
+        "Gear"
+      ],
+      "exclude_terms": [
+        "accessory",
+        "parts",
+        "repair"
+      ],
+      "max_results": 20
+    }
+  ]
+}

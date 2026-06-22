@@ -1,0 +1,23 @@
+.DS_Store
+*.log
+*.pid
+*.sqlite
+*.db
+*.png
+*.jpg
+*.jpeg
+__pycache__/
+.venv/
+venv/
+
+# Local runtime state and personal monitoring data
+state/
+data/
+logs/
+reports/
+config.local.json
+config.*.json
+!config.example.json
+watchlist.json
+WATCHLIST.md
+FEISHU_CC_CONNECT.md
