@@ -2,6 +2,8 @@
 
 这是一个轻量版闲鱼/Goofish 捡漏监控脚本，参考了 `Usagi-org/ai-goofish-monitor` 的关键思路：Playwright 浏览器自动化、复用登录态、优先抓搜索接口 JSON、多层价格/关键词过滤、重复提醒去重、通知渠道解耦。
 
+仓库只包含通用代码和示例配置；本地登录态、个人配置、watchlist、运行日志和监控结果不会提交到 Git。
+
 ## 安装
 
 ```bash
@@ -79,3 +81,7 @@ python3 run_watchlist.py --once
 ```
 
 本地运行时可以创建自己的 `watchlist.json` 和私有配置文件；这些运行态文件不会进入 Git。
+
+## License
+
+MIT
